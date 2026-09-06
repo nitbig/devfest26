@@ -1,0 +1,6 @@
+{
+  "name": "DevFest Ranchi '26",
+  "description": "The official DevFest Ranchi 2026 website by Google Developer Groups Ranchi — EVENT + COMMUNITY + GOOGLE + EXPERIMENTAL DESIGN.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

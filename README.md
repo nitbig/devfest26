@@ -1,1 +1,1 @@
-just a basic frontend of devfest ranchi
+ a basic frontend of devfest ranchi

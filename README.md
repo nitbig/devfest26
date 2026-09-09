@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-frontend of devfest ranchi
-=======
 # DevFest Ranchi '26
 
 The official website for **DevFest Ranchi 2026**, organized by Google Developer Groups (GDG) Ranchi.
@@ -97,5 +94,3 @@ This project builds to a static `dist/` folder via `npm run build`, which can be
 ## About GDG Ranchi
 
 Google Developer Groups (GDG) Ranchi is a community of developers interested in Google's developer technologies. DevFest is GDG's flagship annual event bringing together developers for talks, workshops, and networking.
-
->>>>>>> update

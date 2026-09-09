@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 frontend of devfest ranchi
 =======
 # DevFest Ranchi '26

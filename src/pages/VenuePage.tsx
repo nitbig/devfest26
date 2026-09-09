@@ -14,34 +14,18 @@ interface VenuePageProps {
 
 export const VenuePage: React.FC<VenuePageProps> = ({ onGetTickets }) => {
   return (
-<<<<<<< HEAD
-    <div className="pt-32 sm:pt-40 pb-28 sm:pb-36 w-full max-w-[1240px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20">
-=======
     <div className="pt-36 sm:pt-44 md:pt-48 pb-28 sm:pb-36 w-full max-w-[1240px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20">
->>>>>>> update
       {/* Hero Header */}
       <motion.div
         initial={{ opacity: 0, y: 16, scale: 0.99 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-<<<<<<< HEAD
-        className="mb-14 sm:mb-20"
-      >
-        <span className="text-[10px] font-mono-code uppercase tracking-[0.3em] text-[#555] block mb-3">
-          03 / Destination
-        </span>
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold font-sans tracking-tight text-[#f2f2f2] leading-[1.05] mb-4">
-          Where we meet
-        </h1>
-        <p className="text-base sm:text-lg text-[#80868b] font-normal">
-=======
         className="max-w-3xl mb-10 sm:mb-12"
       >
         <h1 className="text-4xl sm:text-7xl md:text-8xl font-display font-black tracking-tight text-white mb-4">
           Where we meet
         </h1>
         <p className="text-base sm:text-lg md:text-xl font-sans text-white/70 font-light leading-relaxed">
->>>>>>> update
           An auditorium built for community gatherings, keynotes, and deep conversations.
         </p>
       </motion.div>

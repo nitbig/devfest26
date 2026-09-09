@@ -7,20 +7,12 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   X,
-<<<<<<< HEAD
-  CheckCircle2,
-=======
->>>>>>> update
   QrCode,
   Download,
   Calendar,
   ArrowRight,
   User,
   Mail,
-<<<<<<< HEAD
-  Sparkles,
-=======
->>>>>>> update
   MapPin,
   ExternalLink,
   ShieldCheck,
@@ -122,28 +114,6 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 10 }}
           transition={{ duration: 0.24, ease: [0.16, 1, 0.3, 1] }}
-<<<<<<< HEAD
-          className="relative w-full max-w-lg bg-[#121212] border border-[#282828] rounded-3xl shadow-2xl shadow-black/90 overflow-hidden my-auto"
-          onClick={(e) => e.stopPropagation()}
-        >
-          {/* Authentic Google 4-Color Accent Strip */}
-          <div className="h-1.5 w-full flex">
-            <div className="w-1/4 h-full bg-[#4285F4]" />
-            <div className="w-1/4 h-full bg-[#EA4335]" />
-            <div className="w-1/4 h-full bg-[#FBBC05]" />
-            <div className="w-1/4 h-full bg-[#34A853]" />
-          </div>
-
-          {!confirmed ? (
-            <form onSubmit={handleRegister} className="p-6 sm:p-8 space-y-6">
-              {/* Header with Close Button positioned directly above GDG Logo */}
-              <div>
-                <div className="flex items-center justify-between mb-3">
-                  <button
-                    type="button"
-                    onClick={handleClose}
-                    className="prismic-icon-btn prismic-google-red w-8 h-8 text-[#9aa0a6] hover:text-white focus:outline-none"
-=======
           className="relative w-full max-w-lg bg-[#121212]/65 backdrop-blur-2xl border border-white/10 border-t-[#EA4335]/40 rounded-3xl shadow-[0_0_45px_-8px_rgba(234,67,53,0.35),0_25px_50px_-12px_rgba(0,0,0,0.95)] overflow-hidden my-auto"
           onClick={(e) => e.stopPropagation()}
         >
@@ -172,7 +142,6 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                     type="button"
                     onClick={handleClose}
                     className="prismic-icon-btn prismic-google-red w-8 h-8 -translate-x-2 translate-y-0.5 text-[#9aa0a6] hover:text-white focus:outline-none"
->>>>>>> update
                     aria-label="Close modal"
                   >
                     <X size={15} />
@@ -181,17 +150,8 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
 
                 <div className="flex items-center gap-2 mb-2.5">
                   <GdgLogo size={18} />
-<<<<<<< HEAD
-                  <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#202124] border border-[#2d2f31]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#4285F4]" />
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#EA4335]" />
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#FBBC05]" />
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#34A853]" />
-                    <span className="text-[11px] font-medium text-[#bdc1c6] tracking-wide ml-1">
-=======
                   <div className="flex items-center px-3 py-1 rounded-full bg-[#202124]/75 border border-[#2d2f31]">
                     <span className="text-xs font-medium text-[#bdc1c6] tracking-wide">
->>>>>>> update
                       DevFest Ranchi '26
                     </span>
                   </div>
@@ -213,11 +173,7 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                   className={`w-full py-2.5 px-4 rounded-full border transition-all duration-200 flex items-center justify-center gap-2.5 text-xs font-medium ${
                     googleAutofilled
                       ? 'bg-[#34A853]/10 border-[#34A853]/40 text-[#34A853]'
-<<<<<<< HEAD
-                      : 'bg-[#1e1f20] hover:bg-[#282a2d] border-[#3c4043] text-white hover:border-[#5f6368]'
-=======
                       : 'bg-white/[0.04] backdrop-blur-sm hover:bg-white/[0.08] border-white/10 text-white hover:border-white/20'
->>>>>>> update
                   }`}
                 >
                   {/* Google 4-Color "G" Icon */}
@@ -246,13 +202,8 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                 </button>
               </div>
 
-<<<<<<< HEAD
-              {/* Pass Summary Preview (Styled like Google Developer Pass Badge) */}
-              <div className="p-4 rounded-2xl bg-[#18191a] border border-[#2c2d30] space-y-3 relative overflow-hidden">
-=======
               {/* Pass Summary Preview (Styled like Google Developer Pass Badge with Glass Effect) */}
               <div className="p-4 rounded-2xl bg-white/[0.03] backdrop-blur-md border border-white/10 space-y-3 relative overflow-hidden">
->>>>>>> update
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <span className="text-[10px] font-medium tracking-wider text-[#9aa0a6] uppercase">
@@ -278,11 +229,7 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                     <span className="text-[#80868b] uppercase tracking-wider text-[11px]">Track Focus</span>
                     <span className="text-[#8ab4f8] font-medium">{selectedTrack}</span>
                   </div>
-<<<<<<< HEAD
-                  <div className="flex items-center justify-between text-xs pt-2 border-t border-[#262729]">
-=======
                   <div className="flex items-center justify-between text-xs pt-2 border-t border-white/[0.08]">
->>>>>>> update
                     <span className="text-[#80868b] uppercase tracking-wider text-[11px]">Date & City</span>
                     <span className="text-[#bdc1c6]">Friday, Oct 30, 2026 · Ranchi, India</span>
                   </div>
@@ -303,11 +250,7 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                       className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
                         selectedTrack.includes(t.label) || selectedTrack === t.label
                           ? 'bg-white text-black font-semibold shadow-sm'
-<<<<<<< HEAD
-                          : 'bg-[#1e1f20] text-[#9aa0a6] hover:text-white hover:bg-[#282a2d] border border-[#2d2f31]'
-=======
                           : 'bg-white/[0.04] text-[#9aa0a6] hover:text-white hover:bg-white/[0.08] border border-white/10'
->>>>>>> update
                       }`}
                     >
                       {t.label}
@@ -316,11 +259,7 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                 </div>
               </div>
 
-<<<<<<< HEAD
-              {/* Google Material 3 Outlined Input Fields */}
-=======
               {/* Google Material 3 Outlined Input Fields with Frosted Glass */}
->>>>>>> update
               <div className="space-y-3.5">
                 <div>
                   <label className="block text-[11px] font-medium uppercase tracking-wider text-[#9aa0a6] mb-1.5">
@@ -334,11 +273,7 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="Your Name"
-<<<<<<< HEAD
-                      className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-[#18191a] border border-[#2d2f31] text-sm text-white placeholder-[#5f6368] focus:outline-none focus:border-[#4285F4] focus:ring-1 focus:ring-[#4285F4] transition-all"
-=======
                       className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white/[0.04] backdrop-blur-sm border border-white/10 text-sm text-white placeholder-[#5f6368] focus:outline-none focus:border-[#EA4335] focus:ring-1 focus:ring-[#EA4335] transition-all"
->>>>>>> update
                     />
                   </div>
                 </div>
@@ -355,11 +290,7 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="name@domain.com"
-<<<<<<< HEAD
-                      className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-[#18191a] border border-[#2d2f31] text-sm text-white placeholder-[#5f6368] focus:outline-none focus:border-[#4285F4] focus:ring-1 focus:ring-[#4285F4] transition-all"
-=======
                       className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white/[0.04] backdrop-blur-sm border border-white/10 text-sm text-white placeholder-[#5f6368] focus:outline-none focus:border-[#EA4335] focus:ring-1 focus:ring-[#EA4335] transition-all"
->>>>>>> update
                     />
                   </div>
                 </div>
@@ -376,12 +307,6 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                 </button>
                 <button
                   type="submit"
-<<<<<<< HEAD
-                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#1a73e8] hover:bg-[#1557b0] active:bg-[#174ea6] text-white text-xs uppercase tracking-wider font-semibold shadow-lg shadow-[#1a73e8]/20 transition-all active:scale-98 focus:outline-none"
-                >
-                  <span>Complete Reservation</span>
-                  <ArrowRight size={14} />
-=======
                   className="relative inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#1c1414] hover:bg-[#251616] border border-[#EA4335]/45 hover:border-[#EA4335]/70 text-white text-xs uppercase tracking-wider font-semibold shadow-[0_0_15px_rgba(234,67,53,0.2)] hover:shadow-[0_0_25px_rgba(234,67,53,0.35)] transition-all duration-300 active:scale-98 focus:outline-none overflow-hidden group"
                 >
                   <span
@@ -390,20 +315,10 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                   />
                   <span className="relative z-10 text-white font-semibold">Complete Reservation</span>
                   <ArrowRight size={14} className="relative z-10 text-[#EA4335] group-hover:translate-x-0.5 transition-all duration-200" />
->>>>>>> update
                 </button>
               </div>
             </form>
           ) : (
-<<<<<<< HEAD
-            /* Confirmation State: Google Digital Attendee Pass & Wallet */
-            <div className="p-6 sm:p-8 space-y-6 text-center">
-              <div className="flex items-center justify-start mb-1">
-                <button
-                  type="button"
-                  onClick={handleClose}
-                  className="prismic-icon-btn prismic-google-red w-8 h-8 text-[#9aa0a6] hover:text-white focus:outline-none"
-=======
             /* Confirmation State: Attendee Pass & Wallet */
             <div className="p-6 sm:p-8 space-y-6 text-center">
               <div className="flex items-center justify-start -mt-2 sm:-mt-3.5 mb-2">
@@ -411,53 +326,18 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                   type="button"
                   onClick={handleClose}
                   className="prismic-icon-btn prismic-google-red w-8 h-8 -translate-x-2 translate-y-0.5 text-[#9aa0a6] hover:text-white focus:outline-none"
->>>>>>> update
                   aria-label="Close modal"
                 >
                   <X size={15} />
                 </button>
               </div>
-<<<<<<< HEAD
-              {/* Google 4-Color Glowing Success Circle */}
-              <div className="relative inline-flex items-center justify-center w-14 h-14 mx-auto">
-                <div className="absolute inset-0 rounded-full bg-[#34A853]/20 blur-md animate-pulse" />
-                <div className="relative w-14 h-14 rounded-full bg-[#34A853]/15 border border-[#34A853]/40 flex items-center justify-center text-[#34A853]">
-                  <CheckCircle2 size={30} />
-                </div>
-              </div>
 
               <div>
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#34A853]/10 border border-[#34A853]/30 text-[#81c995] text-xs font-medium mb-2">
-                  <Sparkles size={12} />
-                  <span>Pass Confirmed & Registered</span>
-                </div>
-=======
-
-              <div>
->>>>>>> update
                 <h3 className="text-2xl font-bold text-white tracking-tight">
                   See you at DevFest Ranchi!
                 </h3>
                 <p className="text-xs text-[#9aa0a6] mt-1.5 max-w-sm mx-auto leading-relaxed">
                   Your registration is verified. Digital ticket and entry QR code have been dispatched to{' '}
-<<<<<<< HEAD
-                  <span className="text-[#8ab4f8] font-medium">{email || 'your email'}</span>.
-                </p>
-              </div>
-
-              {/* Authentic Google DevFest Wallet Pass Card */}
-              <div className="rounded-2xl bg-[#18191a] border border-[#2d2f31] text-left relative overflow-hidden shadow-xl">
-                {/* 4-Color Mini Accent Bar */}
-                <div className="h-1 w-full flex">
-                  <div className="w-1/4 h-full bg-[#4285F4]" />
-                  <div className="w-1/4 h-full bg-[#EA4335]" />
-                  <div className="w-1/4 h-full bg-[#FBBC05]" />
-                  <div className="w-1/4 h-full bg-[#34A853]" />
-                </div>
-
-                <div className="p-5">
-                  <div className="flex items-center justify-between pb-3.5 border-b border-[#28292c]">
-=======
                   <span className="text-[#EA4335] font-medium">{email || 'your email'}</span>.
                 </p>
               </div>
@@ -472,7 +352,6 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
 
                 <div className="p-5">
                   <div className="flex items-center justify-between pb-3.5 border-b border-white/[0.08]">
->>>>>>> update
                     <div className="flex items-center gap-2">
                       <GdgLogo size={18} />
                       <div>
@@ -484,33 +363,13 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                         </p>
                       </div>
                     </div>
-<<<<<<< HEAD
-                    <span className="px-2.5 py-1 text-[10px] font-semibold rounded-full bg-[#34A853]/15 text-[#81c995] border border-[#34A853]/30">
-=======
                     <span className="px-2.5 py-1 text-[10px] font-semibold rounded-full bg-[#EA4335]/15 text-white border border-[#EA4335]/30 shadow-sm shadow-[#EA4335]/20">
->>>>>>> update
                       ADMIT ONE
                     </span>
                   </div>
 
                   <div className="py-4 flex items-center justify-between gap-4">
                     <div className="space-y-1">
-<<<<<<< HEAD
-                      <p className="text-[10px] text-[#80868b] uppercase tracking-wider">ATTENDEE NAME</p>
-                      <p className="text-base font-bold text-white">{name}</p>
-                      <p className="text-xs text-[#8ab4f8] font-medium pt-0.5">{selectedTrack}</p>
-                      <p className="text-[11px] text-[#80868b] pt-1">
-                        SERIAL: <span className="text-[#bdc1c6] font-medium">{ticketCode}</span>
-                      </p>
-                    </div>
-
-                    {/* Google Styled QR Code with 4-color corners */}
-                    <div className="relative p-2.5 bg-white rounded-xl shadow-md shrink-0">
-                      <div className="absolute top-1 left-1 w-2 h-2 border-t-2 border-l-2 border-[#4285F4]" />
-                      <div className="absolute top-1 right-1 w-2 h-2 border-t-2 border-r-2 border-[#EA4335]" />
-                      <div className="absolute bottom-1 left-1 w-2 h-2 border-b-2 border-l-2 border-[#FBBC05]" />
-                      <div className="absolute bottom-1 right-1 w-2 h-2 border-b-2 border-r-2 border-[#34A853]" />
-=======
                       <p className="text-[10px] text-[#80868b] uppercase tracking-wider font-mono-code">ATTENDEE NAME</p>
                       <p className="text-base font-bold text-white">{name || 'Developer Attendee'}</p>
                       <p className="text-xs text-[#EA4335] font-medium pt-0.5">{selectedTrack}</p>
@@ -525,26 +384,16 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                       <div className="absolute top-1 right-1 w-2 h-2 border-t-2 border-r-2 border-[#EA4335]" />
                       <div className="absolute bottom-1 left-1 w-2 h-2 border-b-2 border-l-2 border-[#EA4335]" />
                       <div className="absolute bottom-1 right-1 w-2 h-2 border-b-2 border-r-2 border-[#EA4335]" />
->>>>>>> update
                       <QrCode size={48} className="text-zinc-950" />
                     </div>
                   </div>
 
-<<<<<<< HEAD
-                  <div className="pt-3 border-t border-[#28292c] flex items-center justify-between text-[11px] text-[#9aa0a6]">
-                    <span className="flex items-center gap-1">
-                      <Calendar size={12} className="text-[#4285F4]" />
-                      Oct 30, 2026 · 08:30 AM IST
-                    </span>
-                    <span className="flex items-center gap-1">
-=======
                   <div className="pt-3 border-t border-white/[0.08] flex items-center justify-between text-[11px] text-[#9aa0a6]">
                     <span className="flex items-center gap-1.5 font-mono-code text-[11px]">
                       <Calendar size={12} className="text-[#EA4335]" />
                       Oct 30, 2026 · 08:30 AM IST
                     </span>
                     <span className="flex items-center gap-1.5 font-mono-code text-[11px]">
->>>>>>> update
                       <MapPin size={12} className="text-[#EA4335]" />
                       Morabadi, Ranchi
                     </span>
@@ -552,43 +401,14 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                 </div>
               </div>
 
-<<<<<<< HEAD
-              {/* Google Integration Actions */}
-              <div className="space-y-2.5 pt-1">
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5">
-                  {/* Add to Google Wallet button */}
-                  <button
-                    type="button"
-                    onClick={handleAddToWallet}
-                    className="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#202124] hover:bg-[#282a2d] border border-[#3c4043] text-white text-xs font-medium transition-all focus:outline-none"
-                  >
-                    {/* Google Wallet Icon */}
-                    <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none">
-                      <rect x="3" y="6" width="18" height="12" rx="3" stroke="#4285F4" strokeWidth="1.6" />
-                      <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" fill="#34A853" />
-                      <path d="M19 9h1.5v6H19z" fill="#FBBC05" />
-                    </svg>
-                    <span>{walletAdded ? 'Added to Google Wallet ✓' : 'Add to Google Wallet'}</span>
-                  </button>
-
-=======
               {/* Action Buttons: Main Form Themed */}
               <div className="space-y-2.5 pt-1">
                 <div className="flex flex-col items-stretch gap-2.5 w-full">
->>>>>>> update
                   {/* Add to Google Calendar button */}
                   <a
                     href={googleCalendarUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-<<<<<<< HEAD
-                    className="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-[#1a73e8] hover:bg-[#1557b0] text-white text-xs font-medium shadow-md shadow-[#1a73e8]/20 transition-all focus:outline-none"
-                  >
-                    <Calendar size={14} />
-                    <span>Add to Google Calendar</span>
-                    <ExternalLink size={12} />
-                  </a>
-=======
                     className="relative w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#1c1414] hover:bg-[#251616] border border-[#EA4335]/45 hover:border-[#EA4335]/70 text-white text-xs sm:text-sm font-semibold shadow-[0_0_15px_rgba(234,67,53,0.2)] hover:shadow-[0_0_25px_rgba(234,67,53,0.35)] transition-all duration-300 active:scale-[0.99] focus:outline-none whitespace-nowrap overflow-hidden group"
                   >
                     <span
@@ -614,7 +434,6 @@ export const RsvpModal: React.FC<RsvpModalProps> = ({
                     </svg>
                     <span>{walletAdded ? 'Added to Google Wallet ✓' : 'Add to Google Wallet'}</span>
                   </button>
->>>>>>> update
                 </div>
 
                 <div className="flex items-center justify-center gap-3 pt-1">

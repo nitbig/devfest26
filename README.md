@@ -2,7 +2,7 @@
 
 The official website for **DevFest Ranchi 2026**, organized by Google Developer Groups (GDG) Ranchi.
 
-Built with React, TypeScript, Vite, and Tailwind CSS, with Google Gemini API integration for AI-powered features.
+Built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Tech Stack
 
@@ -42,7 +42,7 @@ Built with React, TypeScript, Vite, and Tailwind CSS, with Google Gemini API int
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/nitbig/devfest26
+   git clone <repo-url>
    cd devfest-ranchi-26
    ```
 
@@ -58,16 +58,10 @@ Built with React, TypeScript, Vite, and Tailwind CSS, with Google Gemini API int
    cp .env.example .env.local
    ```
 
-   | Variable | Description |
-   |---|---|
-   | `GEMINI_API_KEY` | Your Google Gemini API key, used for AI-powered features |
-   | `APP_URL` | The URL where the app is hosted (used for self-referential links/callbacks) |
-
 4. **Run the app locally**
    ```bash
    npm run dev
    ```
-   The app will be available at `http://localhost:3000`.
 
 ## Available Scripts
 
@@ -90,7 +84,3 @@ Built with React, TypeScript, Vite, and Tailwind CSS, with Google Gemini API int
 ## About GDG Ranchi
 
 Google Developer Groups (GDG) Ranchi is a community of developers interested in Google's developer technologies. DevFest is GDG's flagship annual event bringing together developers for talks, workshops, and networking.
-<<<<<<< HEAD
-=======
-
->>>>>>> f6a9c46dbc62fd758bf164df82add0b2ccfe0c65

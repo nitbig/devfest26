@@ -7,13 +7,6 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 export const ScrollToTop = () => {
-<<<<<<< HEAD
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-=======
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
@@ -30,7 +23,6 @@ export const ScrollToTop = () => {
       window.scrollTo(0, 0);
     }
   }, [pathname, hash]);
->>>>>>> update
 
   return null;
 };

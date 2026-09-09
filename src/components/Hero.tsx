@@ -16,14 +16,11 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ onGetTickets, onExplore }) => {
   const [isDesktopPointer, setIsDesktopPointer] = useState(false);
 
-<<<<<<< HEAD
-=======
   const handleTicketsButtonClick = () => {
     sound.playSnap();
     onGetTickets();
   };
 
->>>>>>> update
   // Pointer-based subtle parallax system (desktop only)
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -252,24 +249,12 @@ export const Hero: React.FC<HeroProps> = ({ onGetTickets, onExplore }) => {
           <button
             id="hero-get-tickets-btn"
             type="button"
-<<<<<<< HEAD
-            onClick={() => {
-              sound.playSnap();
-              onGetTickets();
-            }}
-            className="w-full sm:w-auto group inline-flex items-center justify-center gap-3 pl-7 pr-3.5 py-2.5 rounded-full text-xs tracking-[0.12em] font-semibold text-white border border-[#383838] bg-white/[0.04] hover:border-white hover:bg-white/10 transition-all active:scale-95 shadow-lg shadow-black/40 focus:outline-none min-h-[44px]"
-          >
-            <span>Get tickets</span>
-            <div className="prismic-icon-btn prismic-google-blue w-8 h-8 text-[#80868b] group-hover:text-white">
-              <ArrowUpRight size={14} />
-=======
             onClick={handleTicketsButtonClick}
             className="w-full sm:w-auto group relative overflow-hidden inline-flex items-center justify-center gap-3 pl-7 pr-3.5 py-2.5 rounded-full text-xs tracking-[0.12em] font-semibold text-white border border-[#383838] hover:border-[#555] bg-white/[0.04] hover:bg-white/[0.06] transition-transform duration-100 ease-out active:scale-95 shadow-lg shadow-black/40 focus:outline-none min-h-[44px]"
           >
             <span className="relative z-10">Get tickets</span>
             <div className="relative z-10 w-8 h-8 rounded-full bg-white/[0.08] border border-white/15 text-white flex items-center justify-center transition-transform duration-100 ease-out group-active:scale-90">
               <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
->>>>>>> update
             </div>
           </button>
 

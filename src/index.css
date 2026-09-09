@@ -119,23 +119,15 @@ ul.nav-google-menu li {
   list-style: none;
   width: 36px;
   height: 36px;
-<<<<<<< HEAD
-  background: #181818;
-=======
   background: #161616;
->>>>>>> update
   border: 1px solid #282828;
   border-radius: 40px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-  transition: width 0.42s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.3s ease;
-=======
   box-shadow: none;
   transition: width 0.42s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, background 0.3s ease;
->>>>>>> update
 }
 
 ul.nav-google-menu li::before {
@@ -143,64 +135,30 @@ ul.nav-google-menu li::before {
   position: absolute;
   inset: 0;
   border-radius: 40px;
-<<<<<<< HEAD
-  background: linear-gradient(45deg, var(--i), var(--j));
-  opacity: 0;
-  transition: opacity 0.4s ease;
-=======
   background: linear-gradient(135deg, rgba(234, 67, 53, 0.28), rgba(205, 46, 36, 0.2));
   opacity: 0;
   transition: opacity 0.4s ease, background 0.4s ease;
->>>>>>> update
   z-index: 1;
 }
 
 ul.nav-google-menu li::after {
-<<<<<<< HEAD
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 40px;
-  background: linear-gradient(45deg, var(--i), var(--j));
-  transition: opacity 0.4s ease;
-  filter: blur(14px);
-  z-index: 0;
-  opacity: 0;
-  pointer-events: none;
-=======
   display: none;
->>>>>>> update
 }
 
 ul.nav-google-menu li:hover {
   width: 104px;
-<<<<<<< HEAD
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  border-color: transparent;
-=======
   box-shadow: none;
   border-color: rgba(234, 67, 53, 0.45);
   background: #1c1414;
->>>>>>> update
 }
 
 ul.nav-google-menu li:hover::before {
   opacity: 1;
-<<<<<<< HEAD
-}
-
-ul.nav-google-menu li:hover::after {
-  opacity: 0.6;
-=======
   background: linear-gradient(135deg, rgba(234, 67, 53, 0.32), rgba(205, 46, 36, 0.22));
 }
 
 ul.nav-google-menu li:hover::after {
   display: none;
->>>>>>> update
 }
 
 ul.nav-google-menu li .nav-icon {
@@ -208,11 +166,7 @@ ul.nav-google-menu li .nav-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-  color: #80868b;
-=======
   color: #9aa0a6;
->>>>>>> update
   z-index: 2;
   transition: transform 0.35s ease, opacity 0.3s ease, color 0.3s ease;
   transition-delay: 0.12s;
@@ -228,11 +182,7 @@ ul.nav-google-menu li:hover .nav-icon {
 ul.nav-google-menu li .nav-title {
   position: absolute;
   color: #fff;
-<<<<<<< HEAD
-  font-size: 9px;
-=======
   font-size: 10px;
->>>>>>> update
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: none;
@@ -252,18 +202,6 @@ ul.nav-google-menu li:hover .nav-title {
 
 /* Active route indication on icon pill */
 ul.nav-google-menu li.nav-active {
-<<<<<<< HEAD
-  border-color: rgba(255, 255, 255, 0.4);
-  background: #202020;
-}
-
-ul.nav-google-menu li.nav-active .nav-icon {
-  color: #ffffff;
-}
-
-ul.nav-google-menu li.nav-active::before {
-  opacity: 0.15;
-=======
   border-color: rgba(234, 67, 53, 0.45);
   background: #1c1414;
   box-shadow: none;
@@ -332,7 +270,6 @@ ul.nav-google-menu li.nav-active::before {
 .nav-ticket-hover-btn:hover span.hover-bubble {
   width: calc(var(--width) * 3);
   padding-top: calc(var(--width) * 3);
->>>>>>> update
 }
 
 /* ==========================================================================
@@ -375,12 +312,8 @@ ul.nav-google-menu li.nav-active::before {
   border-radius: 9999px;
 }
 
-<<<<<<< HEAD
-.prismic-icon-btn:hover::before {
-=======
 .prismic-icon-btn:hover::before,
 .group:hover .prismic-icon-btn::before {
->>>>>>> update
   top: 0;
 }
 
@@ -394,23 +327,15 @@ ul.nav-google-menu li.nav-active::before {
 }
 
 .prismic-icon-btn:hover svg,
-<<<<<<< HEAD
-.prismic-icon-btn:hover .icon-inner {
-=======
 .prismic-icon-btn:hover .icon-inner,
 .group:hover .prismic-icon-btn svg,
 .group:hover .prismic-icon-btn .icon-inner {
->>>>>>> update
   transform: rotateY(360deg);
   color: #ffffff;
 }
 
-<<<<<<< HEAD
-.prismic-icon-btn:hover {
-=======
 .prismic-icon-btn:hover,
 .group:hover .prismic-icon-btn {
->>>>>>> update
   border-color: transparent;
   box-shadow: 0 6px 20px var(--hover-shadow, rgba(66, 133, 244, 0.35));
   transform: translateY(-2px);
@@ -674,8 +599,6 @@ ul.nav-google-menu li.nav-active::before {
   will-change: transform, background-position;
 }
 
-<<<<<<< HEAD
-=======
 /* ==========================================================================
    CFP MODAL SELECT DROPDOWN ARROW STYLING
    Shifts the arrow inwards towards the text with refined spacing and smooth transitions
@@ -709,4 +632,3 @@ ul.nav-google-menu li.nav-active::before {
 }
 
 
->>>>>>> update

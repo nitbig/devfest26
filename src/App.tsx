@@ -40,7 +40,7 @@ const AnimatedRoutes: React.FC<{ onGetTickets: () => void }> = ({ onGetTickets }
           <Route path="/about" element={<AboutPage onGetTickets={onGetTickets} />} />
           <Route path="/faq" element={<AboutPage onGetTickets={onGetTickets} />} />
           <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>  
+        </Routes>
       </motion.div>
     </AnimatePresence>
   );

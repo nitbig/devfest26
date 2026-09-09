@@ -75,34 +75,18 @@ export const SchedulePage: React.FC<SchedulePageProps> = ({ onGetTickets }) => {
   });
 
   return (
-<<<<<<< HEAD
-    <div className="pt-32 sm:pt-40 pb-28 sm:pb-36 w-full max-w-[1240px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20">
-=======
     <div className="pt-36 sm:pt-44 md:pt-48 pb-28 sm:pb-36 w-full max-w-[1240px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20">
->>>>>>> update
       {/* Hero Header */}
       <motion.div
         initial={{ opacity: 0, y: 16, scale: 0.99 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-<<<<<<< HEAD
-        className="mb-14 sm:mb-20"
-      >
-        <span className="text-[10px] font-mono-code uppercase tracking-[0.3em] text-[#555] block mb-3">
-          01 / Agenda
-        </span>
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold font-sans tracking-tight text-[#f2f2f2] leading-[1.05] mb-4">
-          Schedule
-        </h1>
-        <p className="text-base sm:text-lg text-[#80868b] font-normal">
-=======
         className="max-w-3xl mb-10 sm:mb-12"
       >
         <h1 className="text-4xl sm:text-7xl md:text-8xl font-display font-black tracking-tight text-white mb-4">
           Schedule
         </h1>
         <p className="text-base sm:text-lg md:text-xl font-sans text-white/70 font-light leading-relaxed">
->>>>>>> update
           One day. Many ways to build.
         </p>
       </motion.div>
@@ -112,11 +96,7 @@ export const SchedulePage: React.FC<SchedulePageProps> = ({ onGetTickets }) => {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.45, delay: 0.1 }}
-<<<<<<< HEAD
-        className="flex items-center gap-2 sm:gap-3 mb-10 border-b border-[#1f1f1f] pb-4"
-=======
         className="flex items-center gap-2 sm:gap-2.5 mb-10 border-b border-[#1f1f1f] pb-4"
->>>>>>> update
       >
         {[
           { key: 'ALL' as const, label: 'All' },
@@ -130,17 +110,10 @@ export const SchedulePage: React.FC<SchedulePageProps> = ({ onGetTickets }) => {
               sound.playTick();
               setFilter(tab.key);
             }}
-<<<<<<< HEAD
-            className={`px-3.5 py-1.5 rounded-full text-xs font-mono-code tracking-[0.08em] transition-colors focus:outline-none ${
-              filter === tab.key
-                ? 'bg-white text-black font-semibold'
-                : 'text-[#80868b] hover:text-white border border-[#222] hover:border-[#333]'
-=======
             className={`px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-sans font-medium whitespace-nowrap transition-all duration-200 cursor-pointer focus:outline-none ${
               filter === tab.key
                 ? 'bg-white text-black font-semibold shadow-md'
                 : 'bg-white/[0.04] text-white/60 hover:text-white border border-white/10 hover:border-white/20'
->>>>>>> update
             }`}
           >
             {tab.label}

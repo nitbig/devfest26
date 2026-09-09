@@ -27,13 +27,6 @@ export const VenueRanchi: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
           <div>
-<<<<<<< HEAD
-            <div className="flex items-center gap-2 text-[10px] font-mono-code text-[#80868b] uppercase tracking-[0.3em] mb-3">
-              <span className="w-8 h-px bg-[#1f1f1f]" />
-              <span>Host Destination</span>
-            </div>
-=======
->>>>>>> update
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans font-bold text-[#f2f2f2] tracking-tight">
               Venue & Arrival
             </h2>

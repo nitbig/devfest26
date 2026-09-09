@@ -1,6 +1,3 @@
-HEAD
-frontend of devfest ranchi
-=======
 # DevFest Ranchi '26
 
 The official website for **DevFest Ranchi 2026**, organized by Google Developer Groups (GDG) Ranchi.

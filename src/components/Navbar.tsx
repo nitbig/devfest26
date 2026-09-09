@@ -3,7 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
+=======
+import React, { useState, useEffect, useRef } from 'react';
+>>>>>>> update
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { GdgLogo } from './GdgLogo';
@@ -57,46 +61,85 @@ export const Navbar: React.FC<NavbarProps> = ({ onGetTickets }) => {
     };
   }, [mobileMenuOpen]);
 
+<<<<<<< HEAD
+=======
+  // Dynamic cursor-following red bubble ref and tracker (inspired by jolly-daifuku-7735da.netlify.app)
+  const ticketBubbleRef = useRef<HTMLSpanElement>(null);
+
+  const handleTicketMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    if (ticketBubbleRef.current) {
+      ticketBubbleRef.current.style.left = `${e.clientX - rect.left}px`;
+      ticketBubbleRef.current.style.top = `${e.clientY - rect.top}px`;
+    }
+  };
+
+>>>>>>> update
   const navItems: NavItemConfig[] = [
     {
       label: 'Home',
       path: '/',
       num: '01',
       icon: <Home size={15} />,
+<<<<<<< HEAD
       colorI: '#4285F4',
       colorJ: '#1a73e8', // Google Blue
+=======
+      colorI: 'rgba(234, 67, 53, 0.32)',
+      colorJ: 'rgba(205, 46, 36, 0.22)',
+>>>>>>> update
     },
     {
       label: 'Schedule',
       path: '/schedule',
       num: '02',
       icon: <Calendar size={15} />,
+<<<<<<< HEAD
       colorI: '#EA4335',
       colorJ: '#c5221f', // Google Red
+=======
+      colorI: 'rgba(234, 67, 53, 0.32)',
+      colorJ: 'rgba(205, 46, 36, 0.22)',
+>>>>>>> update
     },
     {
       label: 'Speakers',
       path: '/speakers',
       num: '03',
       icon: <Users size={15} />,
+<<<<<<< HEAD
       colorI: '#FBBC05',
       colorJ: '#f29900', // Google Yellow
+=======
+      colorI: 'rgba(234, 67, 53, 0.32)',
+      colorJ: 'rgba(205, 46, 36, 0.22)',
+>>>>>>> update
     },
     {
       label: 'Venue',
       path: '/venue',
       num: '04',
       icon: <MapPin size={15} />,
+<<<<<<< HEAD
       colorI: '#34A853',
       colorJ: '#1e8e3e', // Google Green
+=======
+      colorI: 'rgba(234, 67, 53, 0.32)',
+      colorJ: 'rgba(205, 46, 36, 0.22)',
+>>>>>>> update
     },
     {
       label: 'About',
       path: '/about',
       num: '05',
       icon: <Info size={15} />,
+<<<<<<< HEAD
       colorI: '#4285F4',
       colorJ: '#9b51e0', // Google Multimodal / Gemini Gradient
+=======
+      colorI: 'rgba(234, 67, 53, 0.32)',
+      colorJ: 'rgba(205, 46, 36, 0.22)',
+>>>>>>> update
     },
   ];
 
@@ -113,7 +156,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onGetTickets }) => {
           aria-label="Event Navigation"
           className={`pointer-events-auto w-full max-w-4xl transition-all duration-300 ease-out rounded-full border flex items-center justify-between px-3.5 sm:px-6 md:px-7 gap-2.5 sm:gap-4 ${
             scrolled
+<<<<<<< HEAD
               ? 'bg-[#111111]/94 backdrop-blur-md border-[#282828] py-2 shadow-2xl shadow-black/80'
+=======
+              ? 'bg-[#101215]/92 backdrop-blur-xl border-white/15 py-2 sm:py-2.5 shadow-2xl shadow-black/80'
+>>>>>>> update
               : 'bg-[#181818]/45 backdrop-blur-sm border-[#242424]/60 py-2.5 sm:py-3'
           }`}
         >
@@ -187,8 +234,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onGetTickets }) => {
               </ul>
             </div>
           ) : (
+<<<<<<< HEAD
             /* Un-shrunk state: Clean sentence-cased links with smaller 9px typography */
             <div className="hidden md:flex items-center gap-6 lg:gap-7 text-[9px] tracking-[0.06em] font-medium text-[#80868b]">
+=======
+            /* Un-shrunk state: Clean sentence-cased links with 10px typography */
+            <div className="hidden md:flex items-center gap-6 lg:gap-7 text-[10px] tracking-[0.06em] font-medium text-[#80868b]">
+>>>>>>> update
               {navItems.map((item) => {
                 const isActive = location.pathname === item.path;
 
@@ -225,6 +277,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onGetTickets }) => {
                 sound.playSnap();
                 onGetTickets();
               }}
+<<<<<<< HEAD
               className="group inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 rounded-full text-[9px] tracking-[0.06em] font-medium text-white border border-[#333] hover:border-white hover:bg-white/5 transition-all active:scale-95 focus:outline-none"
             >
               <span>Get tickets</span>
@@ -232,6 +285,21 @@ export const Navbar: React.FC<NavbarProps> = ({ onGetTickets }) => {
                 size={11}
                 className="text-[#80868b] group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
               />
+=======
+              onMouseMove={handleTicketMouseMove}
+              onMouseEnter={handleTicketMouseMove}
+              onMouseLeave={handleTicketMouseMove}
+              className="nav-ticket-hover-btn group px-3.5 sm:px-4 py-1.5 text-[10px] tracking-[0.06em] font-semibold active:scale-95 focus:outline-none"
+            >
+              <span ref={ticketBubbleRef} className="hover-bubble" aria-hidden="true" />
+              <span className="hover-content relative z-10 flex items-center gap-1.5">
+                <span>Get tickets</span>
+                <ArrowUpRight
+                  size={11}
+                  className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
+                />
+              </span>
+>>>>>>> update
             </button>
 
             {/* Mobile Menu Button */}

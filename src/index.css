@@ -119,14 +119,23 @@ ul.nav-google-menu li {
   list-style: none;
   width: 36px;
   height: 36px;
+<<<<<<< HEAD
   background: #181818;
+=======
+  background: #161616;
+>>>>>>> update
   border: 1px solid #282828;
   border-radius: 40px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   transition: width 0.42s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.3s ease;
+=======
+  box-shadow: none;
+  transition: width 0.42s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, background 0.3s ease;
+>>>>>>> update
 }
 
 ul.nav-google-menu li::before {
@@ -134,13 +143,20 @@ ul.nav-google-menu li::before {
   position: absolute;
   inset: 0;
   border-radius: 40px;
+<<<<<<< HEAD
   background: linear-gradient(45deg, var(--i), var(--j));
   opacity: 0;
   transition: opacity 0.4s ease;
+=======
+  background: linear-gradient(135deg, rgba(234, 67, 53, 0.28), rgba(205, 46, 36, 0.2));
+  opacity: 0;
+  transition: opacity 0.4s ease, background 0.4s ease;
+>>>>>>> update
   z-index: 1;
 }
 
 ul.nav-google-menu li::after {
+<<<<<<< HEAD
   content: "";
   position: absolute;
   top: 4px;
@@ -154,20 +170,37 @@ ul.nav-google-menu li::after {
   z-index: 0;
   opacity: 0;
   pointer-events: none;
+=======
+  display: none;
+>>>>>>> update
 }
 
 ul.nav-google-menu li:hover {
   width: 104px;
+<<<<<<< HEAD
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   border-color: transparent;
+=======
+  box-shadow: none;
+  border-color: rgba(234, 67, 53, 0.45);
+  background: #1c1414;
+>>>>>>> update
 }
 
 ul.nav-google-menu li:hover::before {
   opacity: 1;
+<<<<<<< HEAD
 }
 
 ul.nav-google-menu li:hover::after {
   opacity: 0.6;
+=======
+  background: linear-gradient(135deg, rgba(234, 67, 53, 0.32), rgba(205, 46, 36, 0.22));
+}
+
+ul.nav-google-menu li:hover::after {
+  display: none;
+>>>>>>> update
 }
 
 ul.nav-google-menu li .nav-icon {
@@ -175,7 +208,11 @@ ul.nav-google-menu li .nav-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   color: #80868b;
+=======
+  color: #9aa0a6;
+>>>>>>> update
   z-index: 2;
   transition: transform 0.35s ease, opacity 0.3s ease, color 0.3s ease;
   transition-delay: 0.12s;
@@ -191,7 +228,11 @@ ul.nav-google-menu li:hover .nav-icon {
 ul.nav-google-menu li .nav-title {
   position: absolute;
   color: #fff;
+<<<<<<< HEAD
   font-size: 9px;
+=======
+  font-size: 10px;
+>>>>>>> update
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: none;
@@ -211,6 +252,7 @@ ul.nav-google-menu li:hover .nav-title {
 
 /* Active route indication on icon pill */
 ul.nav-google-menu li.nav-active {
+<<<<<<< HEAD
   border-color: rgba(255, 255, 255, 0.4);
   background: #202020;
 }
@@ -221,6 +263,76 @@ ul.nav-google-menu li.nav-active .nav-icon {
 
 ul.nav-google-menu li.nav-active::before {
   opacity: 0.15;
+=======
+  border-color: rgba(234, 67, 53, 0.45);
+  background: #1c1414;
+  box-shadow: none;
+}
+
+ul.nav-google-menu li.nav-active .nav-icon {
+  color: #ea4335;
+}
+
+ul.nav-google-menu li.nav-active::before {
+  opacity: 1;
+  background: linear-gradient(135deg, rgba(234, 67, 53, 0.28), rgba(205, 46, 36, 0.2));
+}
+
+/* ==========================================================================
+   NAVBAR TICKET BUTTON BUBBLE HOVER EFFECT (Inspiration: jolly-daifuku-7735da.netlify.app)
+   Cursor-following expanding white bubble fill with black/white color reversal
+   ========================================================================== */
+.nav-ticket-hover-btn {
+  --width: 100%;
+  --time: 0.65s;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color var(--time) ease, box-shadow var(--time) ease, transform 0.2s ease, background-color var(--time) ease;
+  user-select: none;
+  background: #2e3035;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-ticket-hover-btn:hover {
+  border-color: #ffffff;
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.12);
+}
+
+.nav-ticket-hover-btn .hover-content {
+  z-index: 5;
+  color: #ffffff;
+  transition: color var(--time) cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+}
+
+.nav-ticket-hover-btn:hover .hover-content {
+  color: #000000;
+}
+
+.nav-ticket-hover-btn span.hover-bubble {
+  content: "";
+  z-index: 1;
+  width: 0;
+  height: 0;
+  transition: width var(--time) cubic-bezier(0.19, 1, 0.22, 1), padding-top var(--time) cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+  background: #ffffff;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.nav-ticket-hover-btn:hover span.hover-bubble {
+  width: calc(var(--width) * 3);
+  padding-top: calc(var(--width) * 3);
+>>>>>>> update
 }
 
 /* ==========================================================================
@@ -263,7 +375,12 @@ ul.nav-google-menu li.nav-active::before {
   border-radius: 9999px;
 }
 
+<<<<<<< HEAD
 .prismic-icon-btn:hover::before {
+=======
+.prismic-icon-btn:hover::before,
+.group:hover .prismic-icon-btn::before {
+>>>>>>> update
   top: 0;
 }
 
@@ -277,12 +394,23 @@ ul.nav-google-menu li.nav-active::before {
 }
 
 .prismic-icon-btn:hover svg,
+<<<<<<< HEAD
 .prismic-icon-btn:hover .icon-inner {
+=======
+.prismic-icon-btn:hover .icon-inner,
+.group:hover .prismic-icon-btn svg,
+.group:hover .prismic-icon-btn .icon-inner {
+>>>>>>> update
   transform: rotateY(360deg);
   color: #ffffff;
 }
 
+<<<<<<< HEAD
 .prismic-icon-btn:hover {
+=======
+.prismic-icon-btn:hover,
+.group:hover .prismic-icon-btn {
+>>>>>>> update
   border-color: transparent;
   box-shadow: 0 6px 20px var(--hover-shadow, rgba(66, 133, 244, 0.35));
   transform: translateY(-2px);
@@ -546,3 +674,39 @@ ul.nav-google-menu li.nav-active::before {
   will-change: transform, background-position;
 }
 
+<<<<<<< HEAD
+=======
+/* ==========================================================================
+   CFP MODAL SELECT DROPDOWN ARROW STYLING
+   Shifts the arrow inwards towards the text with refined spacing and smooth transitions
+   ========================================================================== */
+.cfp-dropdown-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239aa0a6' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 22px) center;
+  background-size: 14px 14px;
+  padding-right: 2.75rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-position 0.2s ease, background-image 0.2s ease;
+}
+
+.cfp-dropdown-select:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-position: calc(100% - 24px) center;
+}
+
+.cfp-dropdown-select:focus {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23EA4335' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-position: calc(100% - 24px) center;
+}
+
+.cfp-dropdown-select option {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+
+>>>>>>> update

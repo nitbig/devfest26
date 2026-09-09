@@ -16,6 +16,7 @@ export const EventDetailsSection: React.FC<EventDetailsProps> = ({ onViewSchedul
   return (
     <section id="event-details" className="border-t border-[#1f1f1f] bg-[#0a0a0a] py-20 sm:py-28 relative">
       <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20">
+<<<<<<< HEAD
         {/* Small label: 03 / Details */}
         <motion.div
           initial={{ opacity: 0, y: 14, scale: 0.98 }}
@@ -27,6 +28,8 @@ export const EventDetailsSection: React.FC<EventDetailsProps> = ({ onViewSchedul
           03 / Details
         </motion.div>
 
+=======
+>>>>>>> update
         {/* 3 Columns: Date, Venue, Location */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 pb-14 border-b border-[#1f1f1f]">
           {/* DATE */}
@@ -84,7 +87,11 @@ export const EventDetailsSection: React.FC<EventDetailsProps> = ({ onViewSchedul
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true, margin: '-30px' }}
           transition={{ duration: 0.5, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+<<<<<<< HEAD
           className="pt-8 flex items-center justify-between"
+=======
+          className="pt-10 sm:pt-12 flex items-center"
+>>>>>>> update
         >
           <button
             id="view-schedule-btn"
@@ -93,6 +100,7 @@ export const EventDetailsSection: React.FC<EventDetailsProps> = ({ onViewSchedul
               sound.playSnap();
               onViewSchedule();
             }}
+<<<<<<< HEAD
             className="inline-flex items-center gap-2.5 text-xs tracking-[0.12em] font-medium text-white hover:text-[#4285F4] transition-colors py-2 group focus:outline-none"
           >
             <span>View schedule</span>
@@ -104,6 +112,15 @@ export const EventDetailsSection: React.FC<EventDetailsProps> = ({ onViewSchedul
           <span className="text-[10px] font-mono-code tracking-widest text-[#555]">
             4 tracks · 20+ sessions
           </span>
+=======
+            className="inline-flex items-center gap-3.5 sm:gap-4 text-white hover:text-[#4285F4] transition-colors py-2 group focus:outline-none cursor-pointer"
+          >
+            <span className="text-[22px] font-normal tracking-tight">View schedule</span>
+            <div className="prismic-icon-btn prismic-google-blue w-9 h-9 sm:w-10 sm:h-10 text-[#80868b] group-hover:text-white transition-all duration-200">
+              <ArrowUpRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </div>
+          </button>
+>>>>>>> update
         </motion.div>
       </div>
     </section>

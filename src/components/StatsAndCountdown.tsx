@@ -84,7 +84,11 @@ export const StatsAndCountdown: React.FC = () => {
   const stats = [
     { value: 10, suffix: '+', label: 'Speakers' },
     { value: 20, suffix: '+', label: 'Sessions' },
+<<<<<<< HEAD
     { value: 500, suffix: '+', label: 'Developers' },
+=======
+    { value: 300, suffix: '+', label: 'Developers' },
+>>>>>>> update
     { value: 1, suffix: '', label: 'Unforgettable Day' },
   ];
 
@@ -128,12 +132,20 @@ export const StatsAndCountdown: React.FC = () => {
             <span className="text-xs font-mono-code tracking-[0.2em] text-[#71767b] block mb-1">
               Live assembly countdown
             </span>
+<<<<<<< HEAD
             <span className="text-base sm:text-lg font-medium text-white tracking-[0.04em]">
+=======
+            <span
+              className="font-bold text-white tracking-tight block text-[20px]"
+              style={{ fontSize: '20px', fontFamily: "'Google Sans', sans-serif" }}
+            >
+>>>>>>> update
               30th October
             </span>
           </div>
 
           {/* Countdown Clock Display */}
+<<<<<<< HEAD
           <div className="flex items-center gap-4 sm:gap-6 md:gap-8 font-mono-code">
             {/* Days */}
             <div className="flex flex-col items-center">
@@ -141,10 +153,23 @@ export const StatsAndCountdown: React.FC = () => {
                 {String(timeLeft.days).padStart(2, '0')}
               </span>
               <span className="text-[9px] uppercase tracking-[0.25em] text-[#555] mt-1">
+=======
+          <div className="flex items-start gap-2.5 sm:gap-5 md:gap-7">
+            {/* Days */}
+            <div className="flex flex-col items-center">
+              <span
+                className="text-4xl sm:text-5xl font-bold font-sans text-white tabular-nums tracking-tight leading-none"
+                style={{ fontSize: '55px' }}
+              >
+                {String(timeLeft.days).padStart(2, '0')}
+              </span>
+              <span className="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-[#71767b] mt-2 font-medium">
+>>>>>>> update
                 Days
               </span>
             </div>
 
+<<<<<<< HEAD
             <span className="text-2xl text-[#2b2b2b] pb-4" aria-hidden="true">:</span>
 
             {/* Hours */}
@@ -153,10 +178,24 @@ export const StatsAndCountdown: React.FC = () => {
                 {String(timeLeft.hours).padStart(2, '0')}
               </span>
               <span className="text-[9px] uppercase tracking-[0.25em] text-[#555] mt-1">
+=======
+            <span className="text-xl sm:text-3xl md:text-4xl text-[#3a3a3a] self-start mt-1 sm:mt-2 md:mt-2.5 select-none font-sans leading-none" aria-hidden="true">:</span>
+
+            {/* Hours */}
+            <div className="flex flex-col items-center">
+              <span
+                className="text-4xl sm:text-5xl font-bold font-sans text-white tabular-nums tracking-tight leading-none"
+                style={{ fontSize: '55px', fontFamily: "'Google Sans', sans-serif" }}
+              >
+                {String(timeLeft.hours).padStart(2, '0')}
+              </span>
+              <span className="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-[#71767b] mt-2 font-medium">
+>>>>>>> update
                 Hours
               </span>
             </div>
 
+<<<<<<< HEAD
             <span className="text-2xl text-[#2b2b2b] pb-4" aria-hidden="true">:</span>
 
             {/* Minutes */}
@@ -165,10 +204,24 @@ export const StatsAndCountdown: React.FC = () => {
                 {String(timeLeft.minutes).padStart(2, '0')}
               </span>
               <span className="text-[9px] uppercase tracking-[0.25em] text-[#555] mt-1">
+=======
+            <span className="text-xl sm:text-3xl md:text-4xl text-[#3a3a3a] self-start mt-1 sm:mt-2 md:mt-2.5 select-none font-sans leading-none" aria-hidden="true">:</span>
+
+            {/* Minutes */}
+            <div className="flex flex-col items-center">
+              <span
+                className="text-4xl sm:text-5xl font-bold font-sans text-white tabular-nums tracking-tight leading-none"
+                style={{ fontSize: '55px' }}
+              >
+                {String(timeLeft.minutes).padStart(2, '0')}
+              </span>
+              <span className="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-[#71767b] mt-2 font-medium">
+>>>>>>> update
                 Minutes
               </span>
             </div>
 
+<<<<<<< HEAD
             <span className="text-2xl text-[#2b2b2b] pb-4" aria-hidden="true">:</span>
 
             {/* Seconds */}
@@ -177,6 +230,19 @@ export const StatsAndCountdown: React.FC = () => {
                 {String(timeLeft.seconds).padStart(2, '0')}
               </span>
               <span className="text-[9px] uppercase tracking-[0.25em] text-[#555] mt-1">
+=======
+            <span className="text-xl sm:text-3xl md:text-4xl text-[#3a3a3a] self-start mt-1 sm:mt-2 md:mt-2.5 select-none font-sans leading-none" aria-hidden="true">:</span>
+
+            {/* Seconds */}
+            <div className="flex flex-col items-center">
+              <span
+                className="text-4xl sm:text-5xl font-bold font-sans text-white/80 tabular-nums tracking-tight leading-none"
+                style={{ fontSize: '55px' }}
+              >
+                {String(timeLeft.seconds).padStart(2, '0')}
+              </span>
+              <span className="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-[#71767b] mt-2 font-medium">
+>>>>>>> update
                 Seconds
               </span>
             </div>

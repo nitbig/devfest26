@@ -55,6 +55,7 @@ export const ExperiencesSection: React.FC<ExperiencesSectionProps> = ({ onSelect
   return (
     <section id="experiences" className="border-t border-[#1f1f1f] bg-[#0a0a0a] py-20 sm:py-28 relative">
       <div className="w-full max-w-[1240px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20">
+<<<<<<< HEAD
         {/* Small label: 02 / The experience */}
         <motion.div
           initial={{ opacity: 0, y: 14, scale: 0.98 }}
@@ -66,6 +67,8 @@ export const ExperiencesSection: React.FC<ExperiencesSectionProps> = ({ onSelect
           02 / The experience
         </motion.div>
 
+=======
+>>>>>>> update
         {/* Editorial List (Interactive item expands visually, other items become slightly muted) */}
         <div className="divide-y divide-[#1f1f1f] border-y border-[#1f1f1f]">
           {experiences.map((item, idx) => {

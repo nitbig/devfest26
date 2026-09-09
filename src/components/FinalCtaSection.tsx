@@ -99,7 +99,11 @@ export const FinalCtaSection: React.FC<FinalCtaProps> = ({ onGetTickets }) => {
             ))}
 
             <span className="relative z-10">Get tickets</span>
+<<<<<<< HEAD
             <div className="relative z-10 prismic-icon-btn prismic-google-blue w-9 h-9 text-[#80868b] group-hover:text-white group-hover:bg-[#EA4335]">
+=======
+            <div className="relative z-10 prismic-icon-btn prismic-google-red w-9 h-9 text-[#80868b] group-hover:text-white">
+>>>>>>> update
               <ArrowUpRight size={15} />
             </div>
           </button>

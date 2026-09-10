@@ -75,11 +75,11 @@ Built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Pages
 
-- **Home** — Landing page with hero, about, stats/countdown, experiences, tracks, sponsors, tickets, and FAQ sections
-- **About** — Event and community details
-- **Speakers** — Speaker lineup
-- **Schedule** — Event schedule/agenda
-- **Venue** — Venue information for Ranchi
+- **Home** : Landing page with hero, about, stats/countdown, experiences, tracks, sponsors, tickets, and FAQ sections
+- **About** : Event and community details
+- **Speakers** : Speaker lineup
+- **Schedule** : Event schedule/agenda
+- **Venue** : Venue information for Ranchi
 
 ## About GDG Ranchi
 

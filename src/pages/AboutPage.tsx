@@ -33,7 +33,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onGetTickets }) => {
             Google Developer Group Ranchi (GDG Ranchi) is an independent, community-driven platform for developers, designers, students, and tech innovators across Jharkhand who are passionate about Google developer technologies and modern open-source ecosystems.
           </p>
           <p>
-            From hands-on CodeLabs, technical workshops, and study jams to DevFest Ranchi—our annual flagship developer festival—we empower builders with practical engineering skills, industry mentorship, and real-world networking. Connect with our community on the{' '}
+            From hands-on CodeLabs, technical workshops, and study jams to DevFest Ranchi—our annual flagship developer festival: we empower builders with practical engineering skills, industry mentorship, and real-world networking. Connect with our community on the{' '}
             <a
               href="https://gdg.community.dev/gdg-ranchi/"
               target="_blank"

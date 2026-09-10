@@ -42,7 +42,7 @@ Built with React, TypeScript, Vite, and Tailwind CSS.
 
 1. **Clone the repository**
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/nitbig/devfest26
    cd devfest-ranchi-26
    ```
 

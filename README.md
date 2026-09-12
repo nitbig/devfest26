@@ -1,4 +1,4 @@
-#Built with React, TypeScript, Vite, and Tailwind CSS.
+# Built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Tech Stack
 
